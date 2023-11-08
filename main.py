@@ -7,11 +7,17 @@ from selenium import webdriver
 import base64
 from selenium.webdriver.common.by import By
 import os
+from pywebio.platform.flask import webio_view
+from pywebio import STATIC_PATH
+from flask import Flask, send_from_directory
+import argparse
+
+
 ss = open('stl.css','r').read()
 sss= open('pal.png','rb').read()
 yu = open('yemen.png','rb').read()
 
-
+app = Flask(__name__)
 
 
 
@@ -1091,6 +1097,22 @@ def intro():
 
 
 
+app.add_url_rule('/tool', 'webio_view', webio_view(intro),
+            methods=['GET', 'POST', 'OPTIONS'])
 
 
-start_server(intro,port=1234)
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser()
+    parser.add_argument("-p", "--port", type=int, default=8080)
+    args = parser.parse_args()
+
+    start_server(intro, port=args.port,debug=True,cdn=True)
+
+
+
+
+
+
+
+
+
