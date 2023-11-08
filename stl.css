@@ -690,7 +690,7 @@ p.videolink{
     animation: tvflicker 0.5s infinite alternate;
     position: absolute;
     top: 70%;
-    left: 40%;
+    left: 37%;
     width: 465px;
   }
 
@@ -1107,7 +1107,7 @@ p.videolink{
 #monitorr {
   background: #000;
   position: absolute;
-  top: 40%;
+  top: 36.5%;
   left: 3%;
   width: 365px;
   border-top: 3px solid #888;
@@ -1151,7 +1151,7 @@ p.videolink{
     animation: tvflicker 0.5s infinite alternate;
     position: absolute;
     top: 70%;
-    left: 40%;
+    left: 37%;
     width: 465px;
   }
 
