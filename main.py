@@ -82,8 +82,7 @@ def inputt0():
 
 
                 except:
-                    shot_e = driver.find_element(By.XPATH, '/html/body/div[5]/div[2]/form/div')
-                    shot_e.screenshot('foo.png')
+                    driver.save_screenshot('foo.png')
 
                 txt_shot = driver.find_element(By.XPATH, '/html/body/div[5]/div[2]/form/div/div/div/input')
                 with use_scope(name='screen', clear=True):
