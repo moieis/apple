@@ -1,0 +1,1193 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rakkas&display=swap');
+@import url('https://fonts.googleapis.com/earlyaccess/thabit.css');
+.body{
+background-color: #222;
+}
+
+.yemenimage {
+    top: 0;
+    left: 90%;
+    max-width: 50%;
+    position: absolute;
+    width: 10%;
+
+ }
+
+ .plimage {
+    top: 0;
+    left: 2%;
+    max-width: 50%;
+    position: absolute;
+    width: 4%
+}
+
+
+ .logoimage {
+    top: 0;
+    left: 42%;
+    position: absolute;
+    width: 70px
+}
+
+.footer  {
+    display: none;
+}
+
+
+
+p {
+
+    top: 15%;
+    left: 25%;
+    max-width: 50%;
+    position: absolute;
+    font-size: 18px;
+    font-family: 'Rakkas', serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+
+
+
+   }
+
+
+
+
+
+
+
+#form {
+    width: 220px;
+    padding: 10px;
+    font-size: 18px;
+    outline: none;
+    background: linear-gradient(to left top, #000, #22132e) fixed;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.8);
+    transition: all 0.5s;
+    position: absolute;
+    top: 95%;
+    left: 23%;
+    height: 35px;
+
+}
+#formv {
+    width: 220px;
+    padding: 10px;
+    font-size: 18px;
+    outline: none;
+    background: linear-gradient(to left top, #000, #22132e) fixed;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.8);
+    transition: all 0.5s;
+    position: absolute;
+    top: 109%;
+    left: 23%;
+    height: 35px;
+
+}
+
+#form:hover {
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+#formv:hover {
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+#form:focus {
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  background: linear-gradient(to left top, #000, #4e2d69) fixed;
+}
+#formv:focus {
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  background: linear-gradient(to left top, #000, #4e2d69) fixed;
+}
+#button {
+    width: 90px;
+    height:50px;
+
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    outline: none;
+    background: linear-gradient(to left top, #000000, #000000) fixed;
+    border-radius: 10px;
+    border: 5px solid rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.8);
+    transition: all 0.5s;
+    position: absolute;
+    top: 120%;
+    left: 38%;
+
+}
+#button:hover {
+  border: 5px solid rgba(255, 255, 255, 0.5);
+  background: linear-gradient(to left top, #000, #8b5db0) fixed;
+}
+
+#button:focus {
+  background: linear-gradient(to left top, #8b5db0, #000) fixed;
+}
+
+
+
+
+
+
+
+
+
+
+
+###############################
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans|Montserrat+Alternates");
+.frame {
+  position: absolute;
+  top: 900%;
+  left: 50%;
+  width: 100px;
+  height: 200px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.6);
+  background: #201c29;
+  color: #666;
+  font-family: "montserrat alternates", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+}
+
+
+
+.panel {
+    position: absolute;
+    z-index: 2;
+    width: 90%; /* Adjust the width to 90% for a more mobile-friendly size */
+    top: 10%; /* Adjust the top position as needed */
+    left: 5%; /* Adjust the left position as needed */
+    background: #fff;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0.5rem 0.5rem 1rem 0 rgba(0, 0, 0, 0.4);
+    transition: all 0.5s ease-in-out;
+}
+
+
+
+
+
+.panel.show-menu {
+  transform: translate3d(150px, 0, 0);
+}
+
+
+
+.panel .header .menu-icon {
+  position: absolute;
+  width: 29px;
+  height: 15px;
+  top: 23px;
+  left: 20px;
+  cursor: pointer;
+}
+.panel .header .menu-icon:hover .dash-top {
+  transform: translate(0.6rem);
+  transition: 3s;
+}
+.panel .header .menu-icon:hover .circle-1 {
+  transform: translate(-1.6rem);
+  transition: 0.5s;
+}
+
+.panel .header .menu-icon .dash-top, .panel .header .menu-icon .dash-bottom {
+  position: absolute;
+  width: 20px;
+  height: 4px;
+  top: 0;
+  left: 0;
+  background: #fff;
+  border-radius: 1px;
+  transition: all 1s ease-in-out;
+}
+
+.panel .header .menu-icon .dash-bottom {
+  width: 29px;
+  top: auto;
+  bottom: 0;
+}
+
+.panel .header .menu-icon .circle {
+  position: absolute;
+  height: 7px;
+  width: 7px;
+  border-radius: 4px;
+  top: -2px;
+  right: 0;
+  background: #fff;
+  transition: all 0.2s ease-in-out;
+}
+
+.slide {
+  transform: translate(-1.6rem);
+  transition: 0.5s;
+}
+
+.slide-top {
+  transform: translate(0.6rem);
+  transition: 0.5s;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.panel .header .title {
+  color: #fff;
+  font-size: 1.3rem;
+}
+
+.panel .header {
+  height: 40px;
+  width: 100%;
+  background: #000000;
+  font-family: "josefin sans", serif;
+}
+
+
+.panel .notifications {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+.panel .notifications .line {
+  position: absolute;
+  top: 0;
+  left: 27px;
+  bottom: 0;
+  width: 3px;
+  background: #EBEBEB;
+  -webkit-animation: appear 0.5s;
+          animation: appear 0.5s;
+}
+
+@-webkit-keyframes appear {
+  0% {
+    transform: translateY(-20rem);
+  }
+  100% {
+    transform: translateY(0rem);
+  }
+}
+
+@keyframes appear {
+  0% {
+    transform: translateY(-20rem);
+  }
+  100% {
+    transform: translateY(0rem);
+  }
+}
+.panel .notifications .notification {
+  position: relative;
+  z-index: 2;
+  margin: 20px 20px 25px 43px;
+}
+
+.panel .notifications .notification:nth-child(2) {
+  -webkit-animation: here-am-i 0.5s ease-out 0.4s;
+          animation: here-am-i 0.5s ease-out 0.4s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.panel .notifications .notification:nth-child(3) {
+  -webkit-animation: here-am-i 0.5s ease-out 0.6s;
+          animation: here-am-i 0.5s ease-out 0.6s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.panel .notifications .notification:nth-child(4) {
+  -webkit-animation: here-am-i 5s ease-out 0.8s;
+          animation: here-am-i 5s ease-out 0.8s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.panel .notifications .notification:hover {
+  color: rgba(100, 58, 122, 0.7);
+  cursor: pointer;
+}
+
+.panel .notifications .notification .circle {
+  box-sizing: border-box;
+  position: absolute;
+  height: 11px;
+  width: 11px;
+  background: #fff;
+  border: 0.18rem solid rgba(100, 58, 122, 0.5);
+  box-shadow: 0 0 0 3px #fff;
+  border-radius: 6px;
+  top: 0;
+  left: -20px;
+}
+
+
+
+.panel .notifications .notification .time {
+  display: block;
+  font-size: 0.6rem;
+  line-height: 11px;
+  margin-bottom: 2px;
+}
+
+.panel .notifications .notification p {
+  line-height: 20px;
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.panel .notifications .notification p b {
+  font-weight: 600;
+}
+
+.menu {
+  position: absolute;
+  width: 170px;
+  height: 270px;
+  top: 65px;
+  left: 50px;
+  background: #7c3b7c;
+  border-radius: 10px;
+  transition: all 0.5s ease-in-out;
+  transform: translate3d(20px, 0, 0);
+}
+
+.menu.active {
+  box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.5);
+  transform: translate3d(0, 0, 0);
+}
+
+.menu ul {
+  margin: 0;
+  padding: 10px 0;
+  font-size: 1.2rem;
+}
+
+.menu li {
+  color: #FFF;
+  padding: 18px 17px;
+  list-style: none;
+  line-height: 0.9rem;
+  cursor: pointer;
+  margin: 0 0.5rem;
+  font-family: "josefin sans", serif;
+  width: 10rem;
+}
+
+.hvr-underline-from-left {
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+
+.hvr-underline-from-left:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: 0.3rem;
+  background: rgba(255, 255, 255, 0.2);
+  height: 3rem;
+  transition-property: right;
+  transition-duration: 0.4s;
+  transition-timing-function: ease-out;
+}
+
+.hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
+  right: 0;
+}
+
+.menu li span {
+  display: block;
+  float: left;
+  margin-right: 8px;
+  margin-top: -1px;
+}
+
+.menu li .fa-gear, .menu li .fa-user, .menu li .fa-bell {
+  margin-top: 0;
+}
+
+@-webkit-keyframes here-am-i {
+  from {
+    transform: translate3d(0, 50px, 0);
+    opacity: 0;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes here-am-i {
+  from {
+    transform: translate3d(0, 50px, 0);
+    opacity: 0;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+
+p.formm {
+    font-size: 6px; /* Adjust the font size */
+    font-family: fangsong;
+    text-align: center;
+    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5); /* Preserve text-shadow */
+
+    /* You don't need these properties as they conflict with centering */
+    top: auto;
+    left: auto;
+    max-width: auto;
+    position: static;
+    display: block;
+    justify-content: initial;
+}
+
+
+
+
+p.formm b {
+    color:red; /* Change the color of <b> element text */
+    font-size: 1rem; /* Adjust the font size for better readability */
+}
+
+p.formm {
+    font-size: 0.9rem !important; /* Adjust the font size for better readability */
+}
+
+
+
+p.username{
+    color: #000000; /* Change the color of <b> element text */
+    font-size: 1rem;
+    position:absolute;
+    top:90%;
+    left:38%;
+    text-align: center;
+    text-shadow: -0px 0px 0px rgba(0, 0, 0, 0);
+    font-size: 20px;
+}
+
+
+p.videolink{
+
+
+    color: #000000; /* Change the color of <b> element text */
+    font-size: 1rem;
+    position:absolute;
+    top:103%;
+    left:38%;
+    text-align: center;
+    text-shadow: -0px 0px 0px rgba(0, 0, 0, 0);
+    font-size: 23px;
+
+
+
+
+}
+
+
+
+
+
+.popup-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 9999;
+    overflow-y: auto; /* Enable vertical scrolling */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.frame {
+    background: #fff;
+    width: 90%;
+    max-width: 350px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#closePopupButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.realshinmark::before {
+    content: "❗"; /* Insert an exclamation mark icon using the Unicode character */
+    margin-right: 5px; /* Add spacing between the icon and the button text */
+}
+
+.close-button::before {
+    content: "✕"; /* Insert an "X" icon using the Unicode character */
+    font-size: 1.5rem; /* Adjust the size of the "X" icon as needed */
+    color: #000; /* Adjust the color of the "X" icon as needed */
+    display: block; /* Make the "X" icon a block element to center it */
+    text-align: center; /* Center the "X" icon horizontally */
+    line-height: 1.5; /* Center the "X" icon vertically */
+}
+
+.close-button {
+    background: none;
+    border: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+.Btn {
+    position: absolute;
+    top: 30%;
+    left:30%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 160px;
+    height: 30px;
+    border: none;
+    padding: 0px 20px;
+    background-color: rgb(0 0 0);
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 6px 7px 0px rgb(243 27 27);
+    transition-duration: .3s;
+}
+
+.svg {
+  width: 13px;
+  position: absolute;
+  right: 0;
+  margin-right: 20px;
+  fill: white;
+  transition-duration: .3s;
+}
+
+.Btn:hover {
+  color: transparent;
+}
+
+.Btn:hover svg {
+  right: 43%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  transition-duration: .3s;
+}
+
+.Btn:active {
+  transform: translate(3px , 3px);
+  transition-duration: .3s;
+  box-shadow: 2px 2px 0px rgb(140, 32, 212);
+}
+
+
+##################################
+
+
+
+
+#container {
+  max-width: 1024px;
+  margin: auto;
+}
+.d{
+    width:240px;
+    position:absolute;
+    top:0%;
+    left:10%;
+
+}
+#monitor {
+  background: #000;
+  position: absolute;
+  top: 40%;
+  left: 3%;
+  width: 365px;
+  border-top: 3px solid #888;
+  margin: 5%;
+  padding: 2% 2% 4% 2%;
+  border-radius: 10px;
+  border-bottom-left-radius: 50% 2%;
+  border-bottom-right-radius: 50% 2%;
+  transition: margin-right 1s;
+}
+
+#monitor:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 3%;
+  left: 36%;
+  height: 0.5%;
+  width: 28%;
+  background: #ddd;
+  border-radius: 50%;
+  box-shadow: 0 0 3px 0 white;
+}
+
+#monitorscreen {
+  position: relative;
+  background-color: #fff;
+  background-size: cover;
+  background-position: top center;
+  height: 0;
+  padding-bottom: 56.25%;
+  position: relative;
+  overflow: hidden;
+}
+
+@media all and (min-width: 960px) {
+  #monitor {
+    -webkit-animation: tvflicker 0.2s infinite alternate;
+    -moz-animation: tvflicker 0.5s infinite alternate;
+    -o-animation: tvflicker 0.5s infinite alternate;
+    animation: tvflicker 0.5s infinite alternate;
+    position: absolute;
+    top: 70%;
+    left: 40%;
+    width: 465px;
+  }
+
+  @-webkit-keyframes tvflicker {
+    0% {
+      box-shadow: 0 0 100px 0 rgba(200, 235, 255, 0.4);
+    }
+    100% {
+      box-shadow: 0 0 95px 0 rgba(200, 230, 255, 0.45);
+    }
+  }
+  @-moz-keyframes tvflicker {
+    0% {
+      box-shadow: 0 0 100px 0 rgba(225, 235, 255, 0.4);
+    }
+    100% {
+      box-shadow: 0 0 60px 0 rgba(200, 220, 255, 0.6);
+    }
+  }
+  @-o-keyframes tvflicker {
+    0% {
+      box-shadow: 0 0 100px 0 rgba(225, 235, 255, 0.4);
+    }
+    100% {
+      box-shadow: 0 0 60px 0 rgba(200, 220, 255, 0.6);
+    }
+  }
+  @keyframes tvflicker {
+    0% {
+      box-shadow: 0 0 100px 0 rgba(225, 235, 255, 0.4);
+    }
+    100% {
+      box-shadow: 0 0 60px 0 rgba(200, 220, 255, 0.6);
+    }
+  }
+}
+
+
+
+##################################################################################
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.modal h2 {
+    font-size: 20px;
+}
+
+.modal p {
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+/* Add styles for buttons if needed */
+.modal button {
+    padding: 10px 20px;
+    margin-right: 10px;
+}
+
+
+
+
+.btz {
+    width: 90px;
+    height: 50px;
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    outline: none;
+    background: linear-gradient(to left top, #000000, #000000) fixed;
+    border-radius: 10px;
+    border: 5px solid rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.8);
+    transition: all 0.5s;
+    position: absolute;
+    top: 100%;
+    left: 38%;
+}
+
+.lds-roller {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 50%;
+  left: 38.5%;
+}
+.lds-roller div {
+  animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  transform-origin: 40px 40px;
+}
+.lds-roller div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #000000;
+  margin: -4px 0 0 -4px;
+}
+.lds-roller div:nth-child(1) {
+  animation-delay: -0.036s;
+}
+.lds-roller div:nth-child(1):after {
+  top: 63px;
+  left: 63px;
+}
+.lds-roller div:nth-child(2) {
+  animation-delay: -0.072s;
+}
+.lds-roller div:nth-child(2):after {
+  top: 68px;
+  left: 56px;
+}
+.lds-roller div:nth-child(3) {
+  animation-delay: -0.108s;
+}
+.lds-roller div:nth-child(3):after {
+  top: 71px;
+  left: 48px;
+}
+.lds-roller div:nth-child(4) {
+  animation-delay: -0.144s;
+}
+.lds-roller div:nth-child(4):after {
+  top: 72px;
+  left: 40px;
+}
+.lds-roller div:nth-child(5) {
+  animation-delay: -0.18s;
+}
+.lds-roller div:nth-child(5):after {
+  top: 71px;
+  left: 32px;
+}
+.lds-roller div:nth-child(6) {
+  animation-delay: -0.216s;
+}
+.lds-roller div:nth-child(6):after {
+  top: 68px;
+  left: 24px;
+}
+.lds-roller div:nth-child(7) {
+  animation-delay: -0.252s;
+}
+.lds-roller div:nth-child(7):after {
+  top: 63px;
+  left: 17px;
+}
+.lds-roller div:nth-child(8) {
+  animation-delay: -0.288s;
+}
+.lds-roller div:nth-child(8):after {
+  top: 56px;
+  left: 12px;
+}
+@keyframes lds-roller {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+###############################corecct##################
+.success-animation { margin:150px auto;}
+
+.checkmark {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: block;
+    stroke-width: 2;
+    stroke: #ffffff;
+    stroke-miterlimit: 10;
+    box-shadow: inset 0px 0px 0px #000000;
+    animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both;
+    position: absolute;
+    top: 30%;
+    right: 38.5%;
+    margin: 0 auto;
+}
+.checkmark__circle {
+    stroke-dasharray: 166;
+    stroke-dashoffset: 166;
+    stroke-width: 2;
+    stroke-miterlimit: 10;
+    stroke: #000000;
+    fill: #000;
+    animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+
+}
+
+.checkmark__check {
+    transform-origin: 50% 50%;
+    stroke-dasharray: 48;
+    stroke-dashoffset: 48;
+    animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+}
+
+@keyframes stroke {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes scale {
+    0%, 100% {
+        transform: none;
+    }
+
+    50% {
+        transform: scale3d(1.1, 1.1, 1);
+    }
+}
+
+@keyframes fill {
+    100% {
+        box-shadow: inset 0px 0px 0px 30px #4bb71b;
+    }
+}
+
+
+.wa {
+    margin: 10px 0;
+    font-weight: bold;
+    font-family: emoji;
+    color: currentColor;
+
+}
+
+
+
+
+.center {
+  position: absolute;
+  top: -70%;
+  left: -90%;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.table {
+  width: 0px;
+  height: 0px;
+  background-color: #d4e5ff;
+}
+.table .monitor-wrapper {
+  background: #050321;
+  width: 0px;
+  height: 0px;
+
+}
+.table .monitor-wrapper .monitor {
+  width: 320px;
+  height: 35px;
+  background-color: #ffffff;
+  overflow: hidden;
+  white-space: nowrap;
+  box-shadow: inset 0px 5px 10px 2px rgba(0, 0, 0, 0.3);
+}
+.table .monitor-wrapper .monitor p {
+  font-family: "VT323", monospace;
+  font-size: 22px;
+  position: relative;
+  display: inline-block;
+  animation: move 4s infinite linear;
+  color: #000000;
+}
+
+@keyframes move {
+  from {
+    left: 500px;
+  }
+  to {
+    left: -400px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.btn-shine {
+   font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 12px 48px;
+  color: #fff;
+  background: linear-gradient(to right, #4d4d4d 0, #fff 10%, #4d4d4d 20%);
+  background-position: 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s infinite linear;
+  animation-fill-mode: forwards;
+  -webkit-text-size-adjust: none;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+@-moz-keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 180px;
+  }
+  100% {
+    background-position: 180px;
+  }
+}
+@-webkit-keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 180px;
+  }
+  100% {
+    background-position: 180px;
+  }
+}
+@-o-keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 180px;
+  }
+  100% {
+    background-position: 180px;
+  }
+}
+@keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 180px;
+  }
+  100% {
+    background-position: 180px;
+  }
+}
+###########################################################################
+
+
+
+
+
+
+
+
+
+
+
+#containerr {
+  max-width: 1024px;
+  margin: auto;
+}
+
+
+
+
+
+#monitorr {
+  background: #000;
+  position: absolute;
+  top: 40%;
+  left: 3%;
+  width: 365px;
+  border-top: 3px solid #888;
+  margin: 5%;
+  padding: 2% 2% 4% 2%;
+  border-radius: 10px;
+  border-bottom-left-radius: 50% 2%;
+  border-bottom-right-radius: 50% 2%;
+  transition: margin-right 1s;
+}
+
+#monitorr:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 3%;
+  left: 36%;
+  height: 0.5%;
+  width: 28%;
+  background: #ddd;
+  border-radius: 50%;
+  box-shadow: 0 0 3px 0 white;
+}
+
+#monitorscreenn {
+  position: relative;
+  background-color: #000;
+  background-size: cover;
+  background-position: top center;
+  height: 0;
+  padding-bottom: 56.25%;
+  position: relative;
+  overflow: hidden;
+}
+
+@media all and (min-width: 960px) {
+  #monitorr {
+    -webkit-animation: tvflicker 0.2s infinite alternate;
+    -moz-animation: tvflicker 0.5s infinite alternate;
+    -o-animation: tvflicker 0.5s infinite alternate;
+    animation: tvflicker 0.5s infinite alternate;
+    position: absolute;
+    top: 70%;
+    left: 40%;
+    width: 465px;
+  }
+
+  @-webkit-keyframes tvflicker {
+    0% {
+      box-shadow: 0 0 100px 0 rgba(200, 235, 255, 0.4);
+    }
+    100% {
+      box-shadow: 0 0 95px 0 rgba(200, 230, 255, 0.45);
+    }
+  }
+  @-moz-keyframes tvflicker {
+    0% {
+      box-shadow: 0 0 100px 0 rgba(225, 235, 255, 0.4);
+    }
+    100% {
+      box-shadow: 0 0 60px 0 rgba(200, 220, 255, 0.6);
+    }
+  }
+  @-o-keyframes tvflicker {
+    0% {
+      box-shadow: 0 0 100px 0 rgba(225, 235, 255, 0.4);
+    }
+    100% {
+      box-shadow: 0 0 60px 0 rgba(200, 220, 255, 0.6);
+    }
+  }
+  @keyframes tvflicker {
+    0% {
+      box-shadow: 0 0 100px 0 rgba(225, 235, 255, 0.4);
+    }
+    100% {
+      box-shadow: 0 0 60px 0 rgba(200, 220, 255, 0.6);
+    }
+  }
+}
+
+
+############################################################
