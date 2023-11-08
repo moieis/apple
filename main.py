@@ -83,8 +83,10 @@ def inputt0():
 
                 except:
                     driver.save_screenshot('foo.png')
-
-                txt_shot = driver.find_element(By.XPATH, '/html/body/div[5]/div[2]/form/div/div/div/input')
+                try:
+                        txt_shot = driver.find_element(By.XPATH, '/html/body/div[5]/div[2]/form/div/div/div/input')
+                except:
+                        pass
                 with use_scope(name='screen', clear=True):
                     with open('foo.png', 'rb') as image_file:
                         image_data = base64.b64encode(image_file.read()).decode('utf-8')
